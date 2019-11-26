@@ -1,0 +1,32 @@
+<mvc:View controllerName="demo.ui5.ProductListApp.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f"
+	xmlns:grid="sap.ui.layout.cssgrid" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page title="{i18n>pageTitle}" class="sapUiContentPadding">
+					<content>
+						<f:GridList id="productList" items="{/Products}" headerText="{i18n>listTitle}">
+							<f:customLayout>
+								<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fit, minmax(16rem, 1fr))" gridGap="1rem"/>
+							</f:customLayout>
+							<f:GridListItem id="gridListItem" 
+								type="Active" 
+								press=".onProductCardPressed"
+								highlight="{ path: 'DiscontinuedDate', formatter: 'demo.ui5.ProductListApp.model.formatter.fnItemHighlight' }">
+								<!--load fragment-->
+								<core:Fragment fragmentName="demo.ui5.ProductListApp.view.fragments.ProductCard" type="XML"/>
+							</f:GridListItem>
+						</f:GridList>
+					</content>
+					<footer>
+						<OverflowToolbar>
+							<core:Icon src="sap-icon://lightbulb"/>
+							<ToolbarSeparator/>
+							<Label text="{i18n>copyright}"/>
+						</OverflowToolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

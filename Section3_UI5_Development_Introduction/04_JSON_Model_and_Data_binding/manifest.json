@@ -1,0 +1,41 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "demo.ui5.ProductListApp",
+		"type": "application",
+		"title": "Product List",
+		"description": "Manage product in UI5 apps",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.70.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"rootView": {
+			"viewName": "demo.ui5.ProductListApp.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"models": {
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "sample.json"
+			}
+		}
+	}
+}

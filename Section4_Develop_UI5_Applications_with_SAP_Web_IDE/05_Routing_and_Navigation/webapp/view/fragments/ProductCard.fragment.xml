@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<FlexBox direction="Column" class="sapUiSmallMarginTopBottom">
+		<Title text="{Name} ${Price}" titleStyle="H2"/>
+		<Button type="Transparent" icon="sap-icon://arrow-right" tooltip="{i18n>moreToolTip}"
+			press=".onGoToDetail"/>
+		<FlexBox class="sapUiSmallMarginTop">
+			<Image width="10rem" height="10rem" src="{ path: 'Name', formatter: 'demo.ui5.ProductListApp.model.formatter.fnIconPicture' }"/>
+			<FlexBox direction="Column" class="sapUiSmallMarginBegin">
+				<ObjectStatus icon="sap-icon://favorite" title="{i18n>ratingLabel}" text="{Rating}/5" state="Warning" class="sapUiMediumMarginTop"/>
+				<Label text="{i18n>releaseDateLabel}" class="sapUiTinyMarginTop"/>
+				<Text text="{path: 'ReleaseDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { style: 'medium' } }"/>
+				<Label text="{i18n>discontinuedDateLabel}" class="sapUiTinyMarginTop"/>
+				<Text
+					text="{path: 'DiscontinuedDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { relative: true, relativeScale: 'auto' } }"/>
+			</FlexBox>
+		</FlexBox>
+		<Text text="{Description}" class="sapUiSmallMarginTop"/>
+	</FlexBox>
+</core:FragmentDefinition>

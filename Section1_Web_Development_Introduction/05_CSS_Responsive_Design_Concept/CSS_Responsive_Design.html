@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Title</title>
+	<style>
+		.item {
+			border: 1px solid black;
+		}
+
+		@media (min-width: 320px) and (max-width: 599px) {
+			.item {
+				background-color: green;
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		@media (min-width: 600px) and (max-width: 1023px) {
+			.item {
+				background-color: yellow;
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			.item {
+				background-color: blue;
+				width: 300px;
+				height: 300px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>How responsive works</h1>
+	<div class="item"></div>
+</body>
+
+</html>

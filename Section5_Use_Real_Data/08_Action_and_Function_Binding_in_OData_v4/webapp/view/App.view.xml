@@ -1,0 +1,43 @@
+<mvc:View controllerName="demo.ui5.MyContactsApp.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f"
+	xmlns:grid="sap.ui.layout.cssgrid" xmlns:card="sap.f.cards" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<f:GridList id="contactList" 
+							items="{ path: '/People', sorter: { path: 'UserName', descending: true } }" 
+							class="sapUiResponsiveContentPadding"
+							mode="Delete"
+							delete=".onDeleteContact">
+							<f:headerToolbar>
+								<Toolbar >
+									<content>
+										<Title text="My Contacts"/>
+										<ToolbarSeparator/>
+										<Text binding="{/GetPersonWithMostFriends()}" text="Top 1 user: {FirstName} {LastName}"/>
+										<ToolbarSeparator/>
+										<Button icon="sap-icon://sys-add" press=".onCreateContact"/>
+										<ToolbarSeparator/>
+										<Button binding="{/ResetDataSource(...)}" icon="sap-icon://reset" press=".onResetChanges"/>
+									</content>
+								</Toolbar>
+							</f:headerToolbar>
+							<f:customLayout>
+								<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fit, minmax(16rem, 1fr))" gridGap="1rem"/>
+							</f:customLayout>
+							<f:GridListItem type="Active" press=".onListItemPress">
+								<f:Card>
+									<f:header>
+										<card:Header title="@{UserName}" subtitle="{FirstName} {LastName}" statusText="{Age}" iconSrc="sap-icon://customer"/>
+									</f:header>
+									<f:content></f:content>
+								</f:Card>
+							</f:GridListItem>
+						</f:GridList>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

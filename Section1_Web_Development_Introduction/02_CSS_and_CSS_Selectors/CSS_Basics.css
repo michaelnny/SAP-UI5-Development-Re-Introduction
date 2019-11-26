@@ -1,0 +1,7 @@
+p{
+	font-size: 64px;					/* define font size */
+	color: red;						  /* define font color */
+	border: 1px solid green;		  /* define element border as solid line, 1px width, and in green */
+	padding: 10px;						/* define 10px space (inside border) at top, right, bottom, left*/
+	margin: 20px;						/* define 20px space (outside border) at top, right, bottom, left */
+}

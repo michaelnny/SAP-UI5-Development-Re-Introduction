@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="contactDialog" title="Edit Contact" type="Message" contentWidth="50%">
+		<content>
+			<VBox>
+				<Title text="{UserName}" titleStyle="H3"/>
+				<Label text="First Name" class="sapUiSmallMarginTop"/>
+				<Input id="inputFirstName" value="{FirstName}" editable="false"/>
+				<Label text="Last Name" class="sapUiSmallMarginTop"/>
+				<Input id="inputLastName" value="{LastName}" editable="false"/>
+				<Label text="Age" class="sapUiSmallMarginTop"/>
+				<Input id="inputAge" value="{Age}" editable="false"/>
+			</VBox>
+		</content>
+		<endButton>
+			<Button text="Close" press=".onCloseDialog"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Title</title>
+		<style>
+			.greenbox{
+				background-color: green;
+				border: 1px solid black;
+				width: 50px;
+				height: 50px;
+			}
+			.redbox{
+				width: 300px;
+				height: 300px;
+				background-color: red;
+				border: 1px solid black;
+			}
+			#container1{
+				display: flex; 
+				
+			}
+			#container2{
+				display: flex; 
+				flex-direction: row;
+			}
+			#container3{
+				display: flex; 
+				flex-direction: column;
+			}
+			#container4{
+				display: flex; 
+				flex-direction: row;
+				/* center align flex items from top-to-bottom (cross-axis) */
+				align-items: center;
+				/* space around flex items from left-to-right (main-axis) */
+				justify-content: space-around;
+			}
+			#container5{
+				display: flex; 
+				flex-direction: column;
+				/* end align flex items at right side (cross-axis) */
+				align-items: flex-end;
+				/* center align flex items from top-to-bottom (main-axis) */
+				justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>How flex works</h1>
+		<h2>Flex default</h2>
+		<div id="container1" class="redbox">
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+		</div>
+		<h2>Flex with flex-direction row</h2>
+		<div id="container2" class="redbox">
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+		</div>
+		<h2>Flex with flex-direction column</h2>
+		<div id="container3" class="redbox">
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+		</div>
+		<h2>Flex alignment with flex-direction row</h2>
+		<div id="container4" class="redbox">
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+		</div>
+		<h2>Flex alignment with flex-direction column</h2>
+		<div id="container5" class="redbox">
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+			<div class="greenbox"></div>
+		</div>
+	</body>
+</html>

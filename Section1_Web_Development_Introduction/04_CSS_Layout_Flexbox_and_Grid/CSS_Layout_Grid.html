@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Title</title>
+	<style>
+		p{
+			font-size: 2rem;
+			font-weight: bold;
+			color: white;
+		}
+		.greenbox {
+			background-color: green;
+			border: 1px solid black;
+		}
+
+		#redbox1 {
+			display: grid;
+			/*  three columns:
+				
+				fr: availabel space
+				example: 1fr 1fr 1fr;
+				will divided into three parts with each take a 1/3 avaible space
+			 */
+			grid-template-columns: 1fr 1fr 1fr;
+			/* two rows with row heights are 10rem */
+			grid-template-rows: 10rem 10rem;
+		}
+
+		#redbox2 {
+			display: grid;
+			/* two columns:
+			the first column's width is 1/4 of total width, 
+			the second column's width is 3/4 of total width */
+			grid-template-columns: 1fr 3fr;
+			/* three rows:
+			the first and third rows' height is 5rem,
+			while the second row's height is 10rem */
+			grid-template-rows: 5rem 10rem 5rem;
+		}
+
+		#redbox3 {
+			display: grid;
+			/* auto fit column with minimum width 10rem and maximum width 1fr*/
+			grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+			/* 4 rows */
+			grid-template-rows: 10rem 10rem 10rem 10rem;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>How grid works</h1>
+	<h2>3x2 grid</h2>
+	<div id="redbox1">
+		<div class="greenbox">
+			<p>1</p>
+		</div>
+		<div class="greenbox">
+			<p>2</p>
+		</div>
+		<div class="greenbox">
+			<p>3</p>
+		</div>
+		<div class="greenbox">
+			<p>4</p>
+		</div>
+		<div class="greenbox">
+			<p>5</p>
+		</div>
+		<div class="greenbox">
+			<p>6</p>
+		</div>
+	</div>
+	<h2>2x3 grid</h2>
+	<div id="redbox2">
+		<div class="greenbox">
+			<p>1</p>
+		</div>
+		<div class="greenbox">
+			<p>2</p>
+		</div>
+		<div class="greenbox">
+			<p>3</p>
+		</div>
+		<div class="greenbox">
+			<p>4</p>
+		</div>
+		<div class="greenbox">
+			<p>5</p>
+		</div>
+		<div class="greenbox">
+			<p>6</p>
+		</div>
+	</div>
+	<h2>3x3 grid (column:auto-fit)</h2>
+	<div id="redbox3">
+		<div class="greenbox">
+			<p>1</p>
+		</div>
+		<div class="greenbox">
+			<p>2</p>
+		</div>
+		<div class="greenbox">
+			<p>3</p>
+		</div>
+		<div class="greenbox">
+			<p>4</p>
+		</div>
+		<div class="greenbox">
+			<p>5</p>
+		</div>
+		<div class="greenbox">
+			<p>6</p>
+		</div>
+	</div>
+</body>
+
+</html>

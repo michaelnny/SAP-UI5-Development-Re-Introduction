@@ -1,0 +1,11 @@
+#
+#Tue Nov 05 00:46:35 UTC 2019
+Description=Sample OData Services from odata.org
+Type=HTTP
+Authentication=NoAuthentication
+WebIDEUsage=odata_abap,odata_gen,ui5_execute_abap,dev_abap
+Name=ODATA_ORG
+WebIDEEnabled=true
+URL=https\://services.odata.org
+ProxyType=Internet
+WebIDESystem=ODATA_ORG

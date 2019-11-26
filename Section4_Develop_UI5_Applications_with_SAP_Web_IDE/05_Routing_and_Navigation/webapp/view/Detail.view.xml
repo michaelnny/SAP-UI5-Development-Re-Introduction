@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.ui5.ProductListApp.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Detail" showNavButton="true" navButtonPress=".onNavBack">
+		<content>
+			<ObjectHeader title="{Name}"
+				number="{ parts:[{path:'Price'},{path:'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+				numberUnit="USD">
+				<statuses>
+					<ObjectStatus icon="sap-icon://favorite" title="{i18n>ratingLabel}" text="{Rating}/5" state="Warning"/>
+				</statuses>
+				<attributes>
+					<ObjectAttribute title="{i18n>releaseDateLabel}"
+						text="{path: 'ReleaseDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { style: 'medium' } }"/>
+					<ObjectAttribute title="{i18n>discontinuedDateLabel}"
+						text="{path: 'DiscontinuedDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { relative: true, relativeScale: 'auto' } }"
+						state="Warning"/>
+					<ObjectAttribute text="{Description}"/>
+				</attributes>
+			</ObjectHeader>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f" xmlns:grid="sap.ui.layout.cssgrid"
+	controllerName="demo.ui5.ProductListApp.controller.List" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{i18n>pageTitle}" class="sapUiContentPadding">
+		<content>
+			<f:GridList id="productList" 
+				items="{ path: '/Products', sorter: { path: 'ReleaseDate', descending: true } }"
+				mode="None"
+				delete=".onDeleteProduct">
+				<f:headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>listTitle}"/>
+						<ToolbarSeparator />
+						<Button icon="sap-icon://add" tooltip="{i18n>createButtonTooltip}" press=".onCreateProduct"/>
+						<ToolbarSeparator />
+						<Button icon="sap-icon://delete" tooltip="{i18n>deleteButtonTooltip}" press=".onSwitchGridListMode"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://refresh" tooltip="{i18n>refreshButtonTooltip}" press=".onRefresh"/>
+						<ToolbarSeparator />
+						<Button icon="sap-icon://sort" tooltip="{i18n>sortButtonTooltip}" press=".onSortProductByPrice"/>
+						<ToolbarSeparator/>
+						<SearchField width="18rem" placeholder="{i18n>searchPlaceholder}" search=".onSearch"/>
+					</OverflowToolbar>
+				</f:headerToolbar>
+				<f:customLayout>
+					<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fit, minmax(16rem, 1fr))" gridGap="1rem"/>
+				</f:customLayout>
+				<f:GridListItem id="gridListItem" type="Active" press=".onProductCardPressed"
+					highlight="{ path: 'DiscontinuedDate', formatter: 'demo.ui5.ProductListApp.model.formatter.fnItemHighlight' }">
+					<!--load fragment-->
+					<core:Fragment fragmentName="demo.ui5.ProductListApp.view.fragments.ProductCard" type="XML"/>
+				</f:GridListItem>
+			</f:GridList>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<core:Icon src="sap-icon://lightbulb"/>
+				<ToolbarSeparator/>
+				<Label text="{i18n>copyright}"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

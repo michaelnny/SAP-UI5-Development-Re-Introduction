@@ -1,0 +1,15 @@
+<mvc:View controllerName="demo.ui5.PublicAPI.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List headerText="Demo API" items="{ path: '/demo' }">
+							<StandardListItem title="{id} {title}" description="Completed: {completed}"/>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
