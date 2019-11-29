@@ -1,6 +1,6 @@
 # SAP-UI5-Development-Re-Introduction
 
-(https://www.udemy.com/course/sap-ui5-development-re-introduction/?referralCode=FD40C4E48A7AA7DA2CDC)
+[Course link](https://www.udemy.com/course/sap-ui5-development-re-introduction/?referralCode=FD40C4E48A7AA7DA2CDC)
 
 ## Use the UI5 framework, SAP Web IDE, and SAP Fiori Launchpad to build and run enterprise-level web applications
 
