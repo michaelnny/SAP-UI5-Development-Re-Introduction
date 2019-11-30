@@ -9,7 +9,7 @@
 **Hight lights of the course:**
 - Enhance your web development skills
 - Essentials of JavaScript
-- Use the latest UI5 release 1.7x
+- Use the latest UI5 release 1.71.x
 - Use SAP Web IDE and SAP Fiori 3 Launchpad
 - Use Fragments, Routing and Navigation, Device API in UI5
 - Use OData v2 and OData v4
