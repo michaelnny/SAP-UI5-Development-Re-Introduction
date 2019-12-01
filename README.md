@@ -6,7 +6,7 @@
 
 
 
-**Hight lights of the course:**
+**Course highlights:**
 - Enhance your web development skills
 - Essentials of JavaScript
 - Use the latest UI5 release 1.71.x
