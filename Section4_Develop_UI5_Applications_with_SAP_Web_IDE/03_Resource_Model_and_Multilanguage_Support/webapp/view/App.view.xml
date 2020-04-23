@@ -13,7 +13,7 @@
 										path: 'DiscontinuedDate', 
 										formatter: 'demo.ui5.ProductListApp.model.formatter.fnItemHighlight' 
 									}">
-								<FlexBox direction="Column" class="sapUiSmallMarginTopBottom">
+								<FlexBox direction="Column" class="sapUiSmallMargin">
 									<Title text="{Name} ${Price}" titleStyle="H2"/>
 									<FlexBox class="sapUiSmallMarginTop">
 										<Image width="10rem" height="10rem" src="{ path: 'Name', formatter: 'demo.ui5.ProductListApp.model.formatter.fnIconPicture' }"/>
