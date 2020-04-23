@@ -14,7 +14,7 @@
 				<Text text="{path: 'ReleaseDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { style: 'medium' } }"/>
 				<Label text="{i18n>discontinuedDateLabel}" class="sapUiTinyMarginTop"/>
 				<Text
-					text="{path: 'DiscontinuedDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { relative: true, relativeScale: 'auto' } }"/>
+					text="{path: 'DiscontinuedDate', type: 'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { relative: true, relativeScale: 'auto' }}"/>
 			</FlexBox>
 		</FlexBox>
 		<Text text="{Description}" class="sapUiSmallMarginTop"/>
