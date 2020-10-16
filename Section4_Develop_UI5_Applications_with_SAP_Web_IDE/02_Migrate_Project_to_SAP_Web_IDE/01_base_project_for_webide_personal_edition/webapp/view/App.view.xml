@@ -1,0 +1,16 @@
+<mvc:View controllerName="demo.ui5.ProductListApp.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"  displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page title="Product List" class="sapUiContentPadding">
+					<content>
+						
+					</content>
+					<footer>
+
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
