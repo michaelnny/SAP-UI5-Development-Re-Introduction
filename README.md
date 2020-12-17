@@ -23,3 +23,7 @@
 This course will focus on using the UI5 framework to develop enterprise-level web applications for running on the web browser. We’ll start from the absolute beginner level – web development. We cover the basics of HTML and CSS, then followed with lots of JavaScript practice (which are easy to follow, no matter what your current level.) Then we use real-world UI5 applications, build from step-to-step, to cover how to properly use the UI5 framework, SAP Web IDE, to develop these UI5 web applications. 
 
 In the end, you will be about to develop, troubleshooting, and deploy your UI5 web applications to the SAP Fiori 3 Launchpad for both SAP Cloud Platform and SAP Gateway system. We will also briefly cover how to run the UI5 application for non-SAP environment.
+
+
+**Drop me an email if you have question regarding the course:**
+michaelnny@gmail.com
