@@ -7,15 +7,11 @@
     <title>Product List App in UI5</title>
 
     <!-- load UI5 core library -->
-    <script id="sap-ui-bootstrap" 
-        src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-        data-sap-ui-language="en" 
-        data-sap-ui-theme="sap_fiori_3"
-        data-sap-ui-compatVersion="edge" 
+    <script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/1.72.2/resources/sap-ui-core.js"
+        data-sap-ui-language="en" data-sap-ui-theme="sap_fiori_3" data-sap-ui-compatVersion="edge"
         data-sap-ui-resourceroots='{
             "demo.ui5.ProductListApp": "./"
-        }' 
-        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport">
+        }' data-sap-ui-oninit="module:sap/ui/core/ComponentSupport">
         </script>
 </head>
 
@@ -24,10 +20,9 @@
         ComponentSupport.run() will select element 
         with attribute 'data-sap-ui-component'
         to render UI area -->
-    <div data-sap-ui-component 
-        data-name="demo.ui5.ProductListApp" 
-        data-id="container"
+    <div data-sap-ui-component data-name="demo.ui5.ProductListApp" data-id="container"
         data-settings='{"id" : "ProductListApp"}'>
     </div>
 </body>
+
 </html>

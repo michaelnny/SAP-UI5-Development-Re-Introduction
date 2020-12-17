@@ -1,12 +1,36 @@
-{   
+{
     "SayHello": "Hello UI5",
     "Supplier": {
         "Name": "Apple",
         "Address": "Cupertino, CA"
     },
     "Products": [
-        {"ID":"1","Name":"iPhone SE","Description":"The Apple iPhone SE has the footprint and design traits ot the iPhone 5s","ReleaseDate":"2016-03-31T12:00:00.000Z","DiscontinuedDate":"2018-09-12T00:00:00.000Z","Rating":"4.5","Price":"349.99"},
-        {"ID":"2","Name":"iPhone X","Description":" The iPhone X was intended to showcase what Apple considered the technology of the future. ","ReleaseDate":"2017-09-12T12:00:00.000Z","DiscontinuedDate":"2018-09-12T00:00:00.000Z","Rating":"4.4","Price":"899.99"},
-        {"ID":"3","Name":"iPhone 11","Description":"The iPhone 11 is available in six colors: black, white, red, purple, green, and yellow.","ReleaseDate":"2019-09-20T12:00:00.000Z","DiscontinuedDate":"","Rating":"4.8","Price":"1149.99"}
+        {
+            "ID": "1",
+            "Name": "iPhone SE",
+            "Description": "The Apple iPhone SE has the footprint and design traits ot the iPhone 5s",
+            "ReleaseDate": "2016-03-31T12:00:00Z",
+            "DiscontinuedDate": "2018-09-12T00:00:00Z",
+            "Rating": "4.5",
+            "Price": "349.99"
+        },
+        {
+            "ID": "2",
+            "Name": "iPhone X",
+            "Description": " The iPhone X was intended to showcase what Apple considered the technology of the future. ",
+            "ReleaseDate": "2017-09-12T12:00:00Z",
+            "DiscontinuedDate": "2018-09-12T00:00:00Z",
+            "Rating": "4.4",
+            "Price": "899.99"
+        },
+        {
+            "ID": "3",
+            "Name": "iPhone 11",
+            "Description": "The iPhone 11 is available in six colors: black, white, red, purple, green, and yellow.",
+            "ReleaseDate": "2019-09-20T12:00:00Z",
+            "DiscontinuedDate": "",
+            "Rating": "4.8",
+            "Price": "1149.99"
+        }
     ]
 }
